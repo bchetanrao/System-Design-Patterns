@@ -29,9 +29,9 @@ classDiagram
 In our Java implementation, we use the Decorator pattern to add toppings to a pizza:
 
 - **Pizza**: The interface with `getDescription()` and `getCost()` methods.
-- **BasicPizza**: The base pizza object.
-- **PizzaDecorator**: Abstract class that implements `Pizza` and wraps another `Pizza` object.
-- **CheeseDecorator / OlivesDecorator / TomatoDecorator**: Concrete decorators that add toppings and cost.
+- **BasicPizza**: The base pizza object, located in `pizza_shop/components/BasicPizza.java`.
+- **PizzaDecorator**: Abstract class that implements `Pizza` and wraps another `Pizza` object (in `decorators/`).
+- **CheeseDecorator / OlivesDecorator / TomatoDecorator**: Concrete decorators that add toppings and cost (in `decorators/`).
 
 ### Sequence
 

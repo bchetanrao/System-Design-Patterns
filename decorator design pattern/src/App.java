@@ -1,4 +1,4 @@
-import pizza_shop.BasicPizza;
+import pizza_shop.components.BasicPizza;
 import pizza_shop.decorators.CheeseDecorator;
 import pizza_shop.decorators.OlivesDecorator;
 import pizza_shop.decorators.TomatoDecorator;

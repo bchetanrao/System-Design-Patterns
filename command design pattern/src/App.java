@@ -1,10 +1,10 @@
-import air_conditioner.AirConditioner;
-import air_conditioner.TurnAcOff;
-import air_conditioner.TurnAcOn;
-import remote_controller.RemoteControl;
-import television.Television;
-import television.TurnTvOff;
-import television.TurnTvOn;
+import controller.RemoteControl;
+import devices.air_conditioner.AirConditioner;
+import devices.air_conditioner.TurnAcOff;
+import devices.air_conditioner.TurnAcOn;
+import devices.television.Television;
+import devices.television.TurnTvOff;
+import devices.television.TurnTvOn;
 
 public class App {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package television;
+package devices.television;
 
 public class Television {
     private String brand;

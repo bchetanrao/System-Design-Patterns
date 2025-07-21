@@ -1,18 +1,16 @@
-package pizza_shop;
+package pizza_shop.components;
 
 import pizza_shop.interfaces.Pizza;
 
 public class BasicPizza implements Pizza {
-    
-    public BasicPizza() {
-    }
+    public BasicPizza() {}
 
     @Override
     public String getDescription() {
-        return "Margherita"; // Basic pizza description
+        return "Margherita";
     }
     @Override
     public double getCost() {
-        return 5.00; // Base cost of the basic pizza
+        return 5.00;
     }
 }

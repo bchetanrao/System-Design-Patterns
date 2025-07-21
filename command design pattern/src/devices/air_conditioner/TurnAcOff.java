@@ -1,21 +1,21 @@
-package air_conditioner;
-import interfaces.ICommand;
+package devices.air_conditioner;
+import command.ICommand;
 
-public class TurnAcOn implements ICommand {
+public class TurnAcOff implements ICommand {
     private AirConditioner airConditioner;
 
-    public TurnAcOn(AirConditioner airConditioner) {
+    public TurnAcOff(AirConditioner airConditioner) {
         this.airConditioner = airConditioner;
     }
 
     @Override
     public void execute() {
-        airConditioner.turnOn();
+        airConditioner.turnOff();
     }
 
     @Override
     public void undo() {
-        airConditioner.turnOff();
+        airConditioner.turnOn();
     }
 
     @Override

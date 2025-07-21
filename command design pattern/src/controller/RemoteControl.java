@@ -1,5 +1,5 @@
-package remote_controller;
-import interfaces.ICommand;
+package controller;
+import command.ICommand;
 
 public class RemoteControl {
     private ICommand command;

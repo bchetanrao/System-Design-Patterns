@@ -1,4 +1,4 @@
-package air_conditioner;
+package devices.air_conditioner;
 public class AirConditioner {
     private final String model; // Intrinsic state
     private boolean isOn; // Extrinsic state

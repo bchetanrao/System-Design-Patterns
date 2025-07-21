@@ -1,6 +1,6 @@
-package television;
+package devices.television;
 
-public class TurnTvOff implements interfaces.ICommand {
+public class TurnTvOff implements command.ICommand {
     private Television television;
 
     public TurnTvOff(Television television) {
