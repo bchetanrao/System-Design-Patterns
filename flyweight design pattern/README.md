@@ -55,7 +55,6 @@ sequenceDiagram
     LetterFactory-->>Client: ILetter instance
     Client->>DocumentCharacter: display(0, 0)
     DocumentCharacter-->>Client: output
-    ...
 ```
 
 ## Extensibility
