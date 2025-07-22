@@ -33,6 +33,14 @@ In our Java implementation, we use the Decorator pattern to add toppings to a pi
 - **PizzaDecorator**: Abstract class that implements `Pizza` and wraps another `Pizza` object (in `decorators/`).
 - **CheeseDecorator / OlivesDecorator / TomatoDecorator**: Concrete decorators that add toppings and cost (in `decorators/`).
 
+## How It Works
+
+- The client starts with a base pizza object (`BasicPizza`).
+- To add toppings, the client wraps the base pizza with decorator objects (`CheeseDecorator`, `TomatoDecorator`, `OlivesDecorator`), each adding its own behavior and cost.
+- Each decorator holds a reference to a `Pizza` object and delegates calls to it, while adding its own description and cost.
+- The final pizza object is a chain of decorators, each contributing to the overall description and cost.
+- This approach allows dynamic addition of features (toppings) without modifying the base class or creating a large number of subclasses.
+
 ### Sequence
 
 ```mermaid

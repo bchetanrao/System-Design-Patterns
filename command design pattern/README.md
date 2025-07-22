@@ -38,6 +38,14 @@ In our Java implementation (`App.java`), we use the Command pattern to control b
 - **TurnAcOn / TurnAcOff / TurnTvOn / TurnTvOff**: Concrete commands that call `turnOn()` or `turnOff()` on the respective device.
 - **RemoteControl**: The invoker, which triggers commands.
 
+## How It Works
+
+- The client creates command objects (`TurnAcOn`, `TurnAcOff`, `TurnTvOn`, `TurnTvOff`) that implement the `ICommand` interface.
+- Each command object is associated with a specific device (AC or Television) and encapsulates the action to be performed.
+- The `RemoteControl` (invoker) holds a reference to a command and triggers its `execute()` method when a button is pressed.
+- The command object calls the appropriate method (`turnOn()` or `turnOff()`) on the receiver (device).
+- This decouples the invoker from the actual implementation of the action, allowing for flexible command assignment, undo/redo functionality, and easy extension to new devices or actions.
+
 ### Sequence
 
 ```mermaid

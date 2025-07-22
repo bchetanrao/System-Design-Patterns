@@ -6,7 +6,7 @@ import devices.television.Television;
 import devices.television.TurnTvOff;
 import devices.television.TurnTvOn;
 
-public class App {
+public class CommandPatternApp {
     public static void main(String[] args) {
         RemoteControl remote = new RemoteControl();
 

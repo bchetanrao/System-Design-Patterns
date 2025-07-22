@@ -4,7 +4,7 @@ import pizza_shop.decorators.OlivesDecorator;
 import pizza_shop.decorators.TomatoDecorator;
 import pizza_shop.interfaces.Pizza;
 
-public class App {
+public class DecoratorPatternApp {
     public static void main(String[] args) throws Exception {
         BasicPizza basicPizza = new BasicPizza();
         System.out.println("Basic Pizza: " + basicPizza.getDescription() + " | Cost: " + basicPizza.getCost()); 
