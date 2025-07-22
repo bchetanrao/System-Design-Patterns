@@ -1,8 +1,6 @@
 # Flyweight Design Pattern
 
-## Overview
-
-The Flyweight Design Pattern is a structural pattern that enables efficient memory usage by sharing as much data as possible with similar objects. It is particularly useful when dealing with large numbers of objects that have identical or similar data, such as characters in a text editor.
+The **Flyweight Design Pattern** is a structural pattern that enables efficient memory usage by sharing as much data as possible with similar objects. It is particularly useful when dealing with large numbers of objects that have identical or similar data, such as characters in a text editor.
 
 This example demonstrates the Flyweight pattern by simulating the design of a simple text editor, where each character displayed on the screen is represented as a flyweight object. Instead of creating a new object for every character, the pattern ensures that identical characters (with the same font and size) share the same object instance.
 
