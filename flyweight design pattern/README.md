@@ -28,10 +28,10 @@ classDiagram
     FlyweightPatternApp --> LetterFactory
 ```
 
-**ILetter (Interface):** Defines the contract for displaying a character at a specific position.
-**DocumentCharacter (Concrete Flyweight):** Implements `ILetter` and stores intrinsic state (character, font, size).
-**LetterFactory (Flyweight Factory):** Manages the creation and sharing of `DocumentCharacter` instances. Ensures that identical characters are reused.
-**FlyweightPatternApp (Client):** Demonstrates usage by creating and displaying characters in a simulated text editor.
+- **ILetter (Interface):** Defines the contract for displaying a character at a specific position.
+- **DocumentCharacter (Concrete Flyweight):** Implements `ILetter` and stores intrinsic state (character, font, size).
+- **LetterFactory (Flyweight Factory):** Manages the creation and sharing of `DocumentCharacter` instances. Ensures that identical characters are reused.
+- **FlyweightPatternApp (Client):** Demonstrates usage by creating and displaying characters in a simulated text editor.
 
 ## How It Works
 

@@ -44,12 +44,12 @@ classDiagram
     CompositePatternApp --> Notification
 ```
 
-**NotificationChannel (Interface):** Defines the contract for sending a message through a channel (e.g., Email, SMS).
-**NotificationType (Interface):** Defines the contract for formatting a message (e.g., Alert, Promotion).
-**EmailChannel/SMSChannel (Concrete Channels):** Implement `NotificationChannel` to send messages via specific channels.
-**AlertNotification/PromotionNotification (Concrete Types):** Implement `NotificationType` to format messages for specific purposes.
-**Notification (Composite):** Combines a channel and a type to send a formatted message through the chosen channel.
-**CompositePatternApp (Client):** Demonstrates usage by creating and sending notifications with different combinations.
+- **NotificationChannel (Interface):** Defines the contract for sending a message through a channel (e.g., Email, SMS).
+- **NotificationType (Interface):** Defines the contract for formatting a message (e.g., Alert, Promotion).
+- **EmailChannel/SMSChannel (Concrete Channels):** Implement `NotificationChannel` to send messages via specific channels.
+- **AlertNotification/PromotionNotification (Concrete Types):** Implement `NotificationType` to format messages for specific purposes.
+- **Notification (Composite):** Combines a channel and a type to send a formatted message through the chosen channel.
+- **CompositePatternApp (Client):** Demonstrates usage by creating and sending notifications with different combinations.
 
 ## How It Works
 
